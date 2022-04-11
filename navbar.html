@@ -6,25 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
     <nav>
 
-        <h1>Navbar</h1>
-        <aside>
-            <a href="#">Home</a> | <a href="#">Link</a> |
+        <div class="topnav">
+            <h1>Navbar</h1>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="#">Home</a>
+                <a href="#">Link</a>
 
-            <select>
-                <option>Dropdown</option>
-                <option><a href="#">Link</a></option>
-                <option><a href="#">Link</a></option>
-            </select> | <span>Disabled</span>
+                <div class="dropdown">
+                    <button class="dropbtn">Dropdown
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <input type="search" placeholder="Search..">
+                    <input class="button-green" type="submit" value="Search">
+                </div>
+            </div>
 
-
-            <input type="search" placeholder="Search..">
-            <input type="submit" value="Search">
-        </aside>
+             <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+             
+                <i class="fa fa-bars"></i>
+          </div> 
 
     </nav>
 </body>
