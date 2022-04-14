@@ -12,35 +12,53 @@
 </head>
 
 <body>
-    <nav>
 
-        <div class="topnav">
-            <h1>Navbar</h1>
-            <!-- Navigation links (hidden by default) -->
-            <div id="myLinks">
-                <a href="#">Home</a>
-                <a href="#">Link</a>
+    <!-- Navigation bar -->
 
-                <div class="dropdown">
-                    <button class="dropbtn">Dropdown
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </div>
-                    <input type="search" placeholder="Search..">
-                    <input class="button-green" type="submit" value="Search">
-                </div>
+    <div class="nav-container">
+        <nav>
+            <a href="#" class="logo">Navbar</a>
+
+            <div class="right-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">DROPDOWN
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a>Disabled</a></li>
+                    <li>
+                        <div class="search-container">
+                            <form>
+                                <input type="text" placeholder="Search" name="search">
+                                <button type="submit">Search</button>
+                            </form>
+                        </div>
+                    </li>
+
+
+                    <span></span>
+
+
             </div>
+            <input type="checkbox" id="nav-toggle">
+            <label for="nav-toggle" class="burger-menu">
+                <i class="fa fa-bars fa-4x" aria-hidden="true"></i>
 
-             <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-             
-                <i class="fa fa-bars"></i>
-          </div> 
+            </label>
 
-    </nav>
+        </nav>
+    </div>
+
 </body>
 
 </html>
